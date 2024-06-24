@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Custom Video Player</h1>
+    </header>
+
+    <main>
+        <div class="video-player">
+            <video id="myVideo" class="video" controls>
+                <source id="videoSource" src="#" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="controls">
+                <button id="playPauseBtn">Play/Pause</button>
+                <input type="range" id="volumeRange" min="0" max="1" step="0.1" value="1">
+                <button id="muteBtn">Mute</button>
+                <input type="range" id="seekRange" min="0" value="0">
+                <span id="currentTime">00:00</span> / <span id="duration">00:00</span>
+                <button id="fullscreenBtn">Fullscreen</button>
+                <button id="speedBtn">Speed</button>
+                <button id="loopBtn">Loop</button>
+                <button id="snapshotBtn">Snapshot</button>
+                <button id="downloadBtn">Download</button>
+            </div>
+        </div>
+
+        <div class="file-input">
+            <input type="file" id="fileInput" placeholder="upload video">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Custom Video Player</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
